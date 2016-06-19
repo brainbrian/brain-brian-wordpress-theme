@@ -1,0 +1,21 @@
+/* TEAM */
+	Developer: Brian Behrens
+	Contact:   brian@brainbrian.com
+	URI:       http://www.brainbrian.com
+
+/* THANKS */
+	Template Design: 10up
+	URI:             http://10up.com
+	Twitter:         @10up
+	
+	Template Design: Eric Mann
+	URI:             https://eamann.com
+	Twitter:         @ericmann
+
+	Template Design: Luke Woodward
+	URI:             http://lkwdwrd.com
+	Twitter:         @lkwdwrd
+	
+/* SITE */
+	Created:  Sun Jun 19 2016
+	Template: https://github.com/10up/generator-wp-make
