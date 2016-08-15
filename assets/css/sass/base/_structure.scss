@@ -3,12 +3,12 @@
 // Structure
 
 body {
-  background: $color-grey url('../images/bg-header.gif') repeat-x;
+  background-color: $color-grey;
   color: $color-white;
   font-family: $font-family-normal;
   font-size: 62.5%; // Base font size: 10px
   line-height: 1.429;
-  min-width: 432px;
+  min-width: 320px;
 }
 
 * {

@@ -3,48 +3,70 @@
 // Header
 
 .absolute-header {
-  background: $color-dark-grey url('../images/bg-header.gif') repeat-x;
-  height: 92px;
+  background: $color-dark-grey url('../images/bg-header.gif') no-repeat;
+  background-size: 100% 100%;
+  height: 64px;
   width: 100%;
 
   @media (min-width: $screen-md) {
+    height: 92px;
     position: fixed;
     z-index: 99;
   }
 }
 
 .site-header {
-  background: $color-dark-grey url('../images/bg-header.gif') repeat-x;
   display: block;
-  height: 92px;
+  height: 64px;
   margin: 0 auto;
   max-width: 960px;
 
   &--title {
     background: $color-blue url('../images/brain-brian-logo.gif') repeat-x;
+    background-size: 100%;
     float: left;
-    height: 73px;
-    width: 177px;
+    height: 51px;
+    margin: 0;
+    position: relative;
+    width: 124px;
 
-    span a {
+    a {
       display: block;
-      height: 73px;
+      height: 100%;
+      position: absolute;
       text-indent: -9999px;
+      width: 100%;
     }
   }
 
   &--description {
     display: none;
+  }
 
-    @media (min-width: $screen-lg) {
+  @media (min-width: $screen-md) {
+    height: 92px;
+
+    &--title {
+      height: 73px;
+      width: 177px;
+    }
+
+    &--description {
       clear: right;
       color: $color-blue;
       display: inline-block;
       float: left;
-      font-size: 1.4em;
+      font-size: 1.2em;
       font-style: italic;
       font-weight: 100;
-      margin: 30px 0 23px 30px;
+      margin: 32px 0 23px 30px;
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    &--description {
+      font-size: 1.4em;
+      margin-top: 30px;
     }
   }
 }

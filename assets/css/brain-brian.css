@@ -412,12 +412,12 @@ textarea {
   /* 2 */ }
 
 body {
-  background: #484848 url("../images/bg-header.gif") repeat-x;
+  background-color: #484848;
   color: #fff;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 62.5%;
   line-height: 1.429;
-  min-width: 432px; }
+  min-width: 320px; }
 
 * {
   box-sizing: border-box; }
@@ -483,41 +483,56 @@ body {
   width: 100px; }
 
 .absolute-header {
-  background: #262626 url("../images/bg-header.gif") repeat-x;
-  height: 92px;
+  background: #262626 url("../images/bg-header.gif") no-repeat;
+  background-size: 100% 100%;
+  height: 64px;
   width: 100%; }
   @media (min-width: 768px) {
     .absolute-header {
+      height: 92px;
       position: fixed;
       z-index: 99; } }
 
 .site-header {
-  background: #262626 url("../images/bg-header.gif") repeat-x;
   display: block;
-  height: 92px;
+  height: 64px;
   margin: 0 auto;
   max-width: 960px; }
   .site-header--title {
     background: #23a1ff url("../images/brain-brian-logo.gif") repeat-x;
+    background-size: 100%;
     float: left;
-    height: 73px;
-    width: 177px; }
-    .site-header--title span a {
+    height: 51px;
+    margin: 0;
+    position: relative;
+    width: 124px; }
+    .site-header--title a {
       display: block;
-      height: 73px;
-      text-indent: -9999px; }
+      height: 100%;
+      position: absolute;
+      text-indent: -9999px;
+      width: 100%; }
   .site-header--description {
     display: none; }
-    @media (min-width: 992px) {
+  @media (min-width: 768px) {
+    .site-header {
+      height: 92px; }
+      .site-header--title {
+        height: 73px;
+        width: 177px; }
       .site-header--description {
         clear: right;
         color: #23a1ff;
         display: inline-block;
         float: left;
-        font-size: 1.4em;
+        font-size: 1.2em;
         font-style: italic;
         font-weight: 100;
-        margin: 30px 0 23px 30px; } }
+        margin: 32px 0 23px 30px; } }
+  @media (min-width: 992px) {
+    .site-header--description {
+      font-size: 1.4em;
+      margin-top: 30px; } }
 
 .site-footer {
   border-top: #23a1ff solid 2px;
@@ -529,38 +544,49 @@ body {
   background: #484848;
   display: block;
   float: right; }
-  .site-navigation ul {
+  .site-navigation .menu {
     list-style: none;
     margin: 0;
     padding-left: 0; }
-    .site-navigation ul li {
-      float: left;
-      position: relative; }
-  .site-navigation a {
-    display: block;
-    height: 92px;
-    text-indent: -9999px; }
-  .site-navigation .projects a {
-    background: url("../images/navigation-projects.gif") no-repeat;
-    width: 91px; }
-    .site-navigation .projects a:hover, .site-navigation .projects a:focus {
-      background-position: -91px 0; }
-  .site-navigation .projects.current-menu-item a {
-    background-position: -182px 0; }
-  .site-navigation .resume a {
-    background: url("../images/navigation-resume.gif") no-repeat;
-    width: 91px; }
-    .site-navigation .resume a:hover, .site-navigation .resume a:focus {
-      background-position: -91px 0; }
-  .site-navigation .resume.current-menu-item a {
-    background-position: -182px 0; }
-  .site-navigation .blog a {
-    background: url("../images/navigation-blog.gif") no-repeat;
-    width: 73px; }
-    .site-navigation .blog a:hover, .site-navigation .blog a:focus {
-      background-position: -73px 0; }
-  .site-navigation .blog.current-menu-item a {
-    background-position: -146px 0; }
+  .site-navigation .menu-item {
+    float: left;
+    position: relative; }
+    .site-navigation .menu-item a {
+      background-size: 300% 100%;
+      display: block;
+      height: 64px;
+      text-indent: -9999px;
+      width: 64px; }
+      .site-navigation .menu-item a:hover, .site-navigation .menu-item a:focus {
+        background-position: -64px 0; }
+    .site-navigation .menu-item.current-menu-item a {
+      background-position: -128px 0; }
+    @media (min-width: 768px) {
+      .site-navigation .menu-item a {
+        height: 92px;
+        width: 91px; }
+        .site-navigation .menu-item a:hover, .site-navigation .menu-item a:focus {
+          background-position: -91px 0; }
+      .site-navigation .menu-item.current-menu-item a {
+        background-position: -182px 0; } }
+    .site-navigation .menu-item.projects a {
+      background-image: url("../images/navigation-projects.gif"); }
+    .site-navigation .menu-item.resume a {
+      background-image: url("../images/navigation-resume.gif"); }
+    .site-navigation .menu-item.blog a {
+      background-image: url("../images/navigation-blog.gif");
+      width: 51px; }
+      .site-navigation .menu-item.blog a:hover, .site-navigation .menu-item.blog a:focus {
+        background-position: -51px 0; }
+    .site-navigation .menu-item.blog.current-menu-item a {
+      background-position: -102px 0; }
+    @media (min-width: 768px) {
+      .site-navigation .menu-item.blog a {
+        width: 73px; }
+        .site-navigation .menu-item.blog a:hover, .site-navigation .menu-item.blog a:focus {
+          background-position: -73px 0; }
+      .site-navigation .menu-item.blog.current-menu-item a {
+        background-position: -146px 0; } }
 
 .entry-meta {
   clear: both;
@@ -882,7 +908,8 @@ textarea {
         transition: color 300ms ease-in-out; }
       .recent-projects .project-list li a p {
         font-size: 1.8em;
-        padding: 0 20px 10px; }
+        padding: 0 20px 10px;
+        word-break: break-word; }
       .recent-projects .project-list li a:hover, .recent-projects .project-list li a:focus {
         background: #23a1ff; }
         .recent-projects .project-list li a:hover h4, .recent-projects .project-list li a:focus h4 {

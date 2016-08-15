@@ -7,73 +7,97 @@
   display: block;
   float: right;
 
-  ul {
+  .menu {
     list-style: none;
     margin: 0;
     padding-left: 0;
-
-    li {
-      float: left;
-      position: relative;
-    }
   }
 
-  a {
-    display: block;
-    height: 92px;
-    text-indent: -9999px;
-  }
+  .menu-item {
+    float: left;
+    position: relative;
 
-  .projects {
     a {
-      background: url('../images/navigation-projects.gif') no-repeat;
-      width: 91px;
+      background-size: 300% 100%;
+      display: block;
+      height: 64px;
+      text-indent: -9999px;
+      width: 64px;
 
       &:hover,
       &:focus {
-        background-position: -91px 0;
+        background-position: -64px 0;
       }
     }
 
     &.current-menu-item {
       a {
-        background-position: -182px 0;
-      }
-    }
-  }
-
-  .resume {
-    a {
-      background: url('../images/navigation-resume.gif') no-repeat;
-      width: 91px;
-
-      &:hover,
-      &:focus {
-        background-position: -91px 0;
+        background-position: -128px 0;
       }
     }
 
-    &.current-menu-item {
+    @media (min-width: $screen-md) {
       a {
-        background-position: -182px 0;
+        height: 92px;
+        width: 91px;
+
+        &:hover,
+        &:focus {
+          background-position: -91px 0;
+        }
+      }
+
+      &.current-menu-item {
+        a {
+          background-position: -182px 0;
+        }
       }
     }
-  }
 
-  .blog {
-    a {
-      background: url('../images/navigation-blog.gif') no-repeat;
-      width: 73px;
-
-      &:hover,
-      &:focus {
-        background-position: -73px 0;
-      }
-    }
-
-    &.current-menu-item {
+    &.projects {
       a {
-        background-position: -146px 0;
+        background-image: url('../images/navigation-projects.gif');
+      }
+    }
+
+    &.resume {
+      a {
+        background-image: url('../images/navigation-resume.gif');
+      }
+    }
+
+    &.blog {
+      a {
+        background-image: url('../images/navigation-blog.gif');
+        width: 51px;
+
+        &:hover,
+        &:focus {
+          background-position: -51px 0;
+        }
+      }
+
+      &.current-menu-item {
+        a {
+          background-position: -102px 0;
+        }
+      }
+
+      @media (min-width: $screen-md) {
+        a {
+          width: 73px;
+
+          &:hover,
+          &:focus {
+            background-position: -73px 0;
+          }
+        }
+
+        &.current-menu-item {
+          a {
+            background-position: -146px 0;
+          }
+        }
       }
     }
   }
