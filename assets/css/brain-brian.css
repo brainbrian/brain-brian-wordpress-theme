@@ -482,45 +482,42 @@ body {
   text-transform: uppercase;
   width: 100px; }
 
-.absolute-positioned-header {
+.absolute-header {
   background: #262626 url("../images/bg-header.gif") repeat-x;
   height: 92px;
   width: 100%; }
   @media (min-width: 768px) {
-    .absolute-positioned-header {
+    .absolute-header {
       position: fixed;
       z-index: 99; } }
 
-#branding {
+.site-header {
   background: #262626 url("../images/bg-header.gif") repeat-x;
   display: block;
   height: 92px;
   margin: 0 auto;
   max-width: 960px; }
-
-#site-title {
-  background: #23a1ff url("../images/brain-brian-logo.gif") repeat-x;
-  float: left;
-  height: 73px;
-  width: 177px; }
-
-#site-title span a {
-  display: block;
-  height: 73px;
-  text-indent: -9999px; }
-
-#site-description {
-  display: none; }
-  @media (min-width: 992px) {
-    #site-description {
-      clear: right;
-      color: #23a1ff;
-      display: inline-block;
-      float: left;
-      font-size: 1.4em;
-      font-style: italic;
-      font-weight: 100;
-      margin: 30px 0 23px 30px; } }
+  .site-header--title {
+    background: #23a1ff url("../images/brain-brian-logo.gif") repeat-x;
+    float: left;
+    height: 73px;
+    width: 177px; }
+    .site-header--title span a {
+      display: block;
+      height: 73px;
+      text-indent: -9999px; }
+  .site-header--description {
+    display: none; }
+    @media (min-width: 992px) {
+      .site-header--description {
+        clear: right;
+        color: #23a1ff;
+        display: inline-block;
+        float: left;
+        font-size: 1.4em;
+        font-style: italic;
+        font-weight: 100;
+        margin: 30px 0 23px 30px; } }
 
 .site-footer {
   border-top: #23a1ff solid 2px;
@@ -528,54 +525,42 @@ body {
   max-width: 920px;
   padding: 20px 30px; }
 
-#access {
-  background: #eee;
+.site-navigation {
+  background: #484848;
   display: block;
   float: right; }
-
-#access ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 0; }
-
-#access li {
-  float: left;
-  position: relative; }
-
-#access a {
-  height: 92px;
-  display: block;
-  text-indent: -9999px; }
-
-#access .projects a {
-  width: 91px;
-  background: url("../images/navigation-projects.gif") no-repeat; }
-
-#access .projects a:hover {
-  background-position: -91px 0; }
-
-#access .projects.current_page_item a {
-  background-position: -182px 0; }
-
-#access .resume a {
-  width: 91px;
-  background: url("../images/navigation-resume.gif") no-repeat; }
-
-#access .resume a:hover {
-  background-position: -91px 0; }
-
-#access .resume.current_page_item a {
-  background-position: -182px 0; }
-
-#access .blog a {
-  width: 73px;
-  background: url("../images/navigation-blog.gif") no-repeat; }
-
-#access .blog a:hover {
-  background-position: -73px 0; }
-
-#access .blog.current_page_item a {
-  background-position: -146px 0; }
+  .site-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0; }
+    .site-navigation ul li {
+      float: left;
+      position: relative; }
+  .site-navigation a {
+    display: block;
+    height: 92px;
+    text-indent: -9999px; }
+  .site-navigation .projects a {
+    background: url("../images/navigation-projects.gif") no-repeat;
+    width: 91px; }
+    .site-navigation .projects a:hover, .site-navigation .projects a:focus {
+      background-position: -91px 0; }
+  .site-navigation .projects.current-menu-item a {
+    background-position: -182px 0; }
+  .site-navigation .resume a {
+    background: url("../images/navigation-resume.gif") no-repeat;
+    width: 91px; }
+    .site-navigation .resume a:hover, .site-navigation .resume a:focus {
+      background-position: -91px 0; }
+  .site-navigation .resume.current-menu-item a {
+    background-position: -182px 0; }
+  .site-navigation .blog a {
+    background: url("../images/navigation-blog.gif") no-repeat;
+    width: 73px; }
+    .site-navigation .blog a:hover, .site-navigation .blog a:focus {
+      background-position: -73px 0; }
+  .site-navigation .blog.current-menu-item a {
+    background-position: -146px 0; }
 
 .entry-meta {
   clear: both;

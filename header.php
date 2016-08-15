@@ -39,36 +39,20 @@
     ?>
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <?php wp_head(); ?>
-    <!--[if lt IE 9]>
-    <script src="<?php bloginfo('template_directory'); ?>/_ui/js/html5.js" type="text/javascript"></script>
-    <![endif]-->
-    <script src="<?php bloginfo('template_directory'); ?>/_ui/js/lib/jquery-1.4.2.min.js" type="text/javascript"></script>
-    <script src="<?php bloginfo('template_directory'); ?>/_ui/js/twitter.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        getTweets("from:brianbehrens", 1, "#tweet", "<?php bloginfo('template_directory'); ?>/_ui/xml/twitter.php");
-      });
-      /*
-      $(document).ready(function(){
-      	getTweets("from:brianbehrens", 5, "#tweets", "<?php bloginfo('template_directory'); ?>/_ui/xml/twitter.php");
-      });
-      */
-    </script>
   </head>
   <body <?php body_class(); ?>>
     <div id="page" class="hfeed">
-      <div class="absolute-positioned-header">
-        <header id="branding" role="banner">
+      <div class="absolute-header">
+        <header class="site-header" role="banner">
           <hgroup>
-            <h1 id="site-title"><span><a href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a></span></h1>
-            <h2 id="site-description"><?php bloginfo('description'); ?></h2>
+            <h1 class="site-header--title"><span><a href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a></span></h1>
+            <h2 class="site-header--description"><?php bloginfo('description'); ?></h2>
           </hgroup>
-          <nav id="access" role="navigation">
+          <nav class="site-navigation" role="navigation">
             <h1 class="section-heading"><?php _e('Main menu', 'brainbrian'); ?></h1>
             <div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e('Skip to content', 'brainbrian'); ?>"><?php _e('Skip to content', 'brainbrian'); ?></a></div>
             <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
-          </nav><!-- #access -->
-          <div id="tweet"></div>
-        </header><!-- #branding -->
-      </div><!-- .absolute-positioned-header -->
+          </nav>
+        </header>
+      </div>
       <div id="main">

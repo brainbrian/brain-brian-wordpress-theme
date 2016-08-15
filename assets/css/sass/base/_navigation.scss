@@ -2,64 +2,79 @@
 // http://www.brainbrian.com
 // Navigation
 
-#access {
-  background: #eee;
+.site-navigation {
+  background: $color-grey;
   display: block;
   float: right;
-}
 
-#access ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
 
-#access li {
-  float: left;
-  position: relative;
-}
+    li {
+      float: left;
+      position: relative;
+    }
+  }
 
-#access a {
-  height: 92px;
-  display: block;
-  text-indent: -9999px;
-}
+  a {
+    display: block;
+    height: 92px;
+    text-indent: -9999px;
+  }
 
-#access .projects a {
-  width: 91px;
-  background: url('../images/navigation-projects.gif') no-repeat;
-}
+  .projects {
+    a {
+      background: url('../images/navigation-projects.gif') no-repeat;
+      width: 91px;
 
-#access .projects a:hover {
-  background-position: -91px 0;
-}
+      &:hover,
+      &:focus {
+        background-position: -91px 0;
+      }
+    }
 
-#access .projects.current_page_item a {
-  background-position: -182px 0;
-}
+    &.current-menu-item {
+      a {
+        background-position: -182px 0;
+      }
+    }
+  }
 
-#access .resume a {
-  width: 91px;
-  background: url('../images/navigation-resume.gif') no-repeat;
-}
+  .resume {
+    a {
+      background: url('../images/navigation-resume.gif') no-repeat;
+      width: 91px;
 
-#access .resume a:hover {
-  background-position: -91px 0;
-}
+      &:hover,
+      &:focus {
+        background-position: -91px 0;
+      }
+    }
 
-#access .resume.current_page_item a {
-  background-position: -182px 0;
-}
+    &.current-menu-item {
+      a {
+        background-position: -182px 0;
+      }
+    }
+  }
 
-#access .blog a {
-  width: 73px;
-  background: url('../images/navigation-blog.gif') no-repeat;
-}
+  .blog {
+    a {
+      background: url('../images/navigation-blog.gif') no-repeat;
+      width: 73px;
 
-#access .blog a:hover {
-  background-position: -73px 0;
-}
+      &:hover,
+      &:focus {
+        background-position: -73px 0;
+      }
+    }
 
-#access .blog.current_page_item a {
-  background-position: -146px 0;
+    &.current-menu-item {
+      a {
+        background-position: -146px 0;
+      }
+    }
+  }
 }
