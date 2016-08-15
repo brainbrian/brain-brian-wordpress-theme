@@ -22,8 +22,9 @@ define( 'BB_INC',          BB_PATH . 'includes/' );
 
 // Include compartmentalized functions
 require_once BB_INC . 'functions/core.php';
+require_once BB_INC . 'functions/theme-helpers.php';
 
 // Include lib classes
 
 // Run the setup functions
-BrainBrian\BrainBrian\Core\setup();
+BrainBrian\Core\setup();

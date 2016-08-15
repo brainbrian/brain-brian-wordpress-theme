@@ -7,6 +7,11 @@
  */
 ?>
 
-	<?php wp_footer(); ?>
-	</body>
+      </div><!-- #main -->
+      <footer id="colophon" role="contentinfo">
+        © <?php echo date('Y'); ?> Brain Brian (Brian Behrens)
+      </footer><!-- #colophon -->
+    </div><!-- #page -->
+    <?php wp_footer(); ?>
+  </body>
 </html>
