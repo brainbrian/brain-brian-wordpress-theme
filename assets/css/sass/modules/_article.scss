@@ -1,0 +1,76 @@
+// Brain Brian
+// http://www.brainbrian.com
+// Blog
+
+.entry-title a {
+  color: #02A3FF;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #02A3FF;
+    text-decoration: underline;
+  }
+}
+
+/* HIDE PAGE TITLE WHERE type = page */
+.type-page .entry-header .entry-title {
+  display: none;
+}
+
+.type-post {
+  padding: 20px;
+
+  .entry-header {
+    padding-bottom: 20px;
+
+    .entry-title {
+      font-size: 3.2em;
+      color: #02A3FF;
+    }
+
+    .entry-meta {
+      font-size: 1.2em;
+      letter-spacing: 0.1em;
+
+      a {
+        color: #02A3FF;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .entry-content {
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+
+    a {
+      color: #02A3FF;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  footer.entry-meta a {
+    color: #02A3FF;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}

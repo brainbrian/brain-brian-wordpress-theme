@@ -1,0 +1,61 @@
+// Brain Brian
+// http://www.brainbrian.com
+// Resume
+
+.resume {
+  .headline {
+    padding:20px;
+    background:#262626;
+    border-radius:5px;
+  }
+
+  p {
+    font-size: 1.4em;
+    letter-spacing: .1em;
+    line-height: 2.2;
+    padding: 20px;
+  }
+
+  h3 {
+    font-size: 2.0em;
+    height: 15px;
+    text-indent: -9999px;
+  }
+
+  h4 {
+    font-size: 1.8em;
+    color: #02a3ff;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+
+  a {
+    color: #02a3ff;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.resume-experience .headline h3 {
+  background: #262626 url('../images/h3-experience.png') no-repeat;
+  width: 104px;
+}
+
+.resume-awards .headline h3 {
+  background: #262626 url('../images/h3-awards.png') no-repeat;
+  width: 104px;
+}
+
+.resume-education .headline h3 {
+  background: #262626 url('../images/h3-education.png') no-repeat;
+  width: 104px;
+}
+
+.resume-skills .headline h3 {
+  background: #262626 url('../images/h3-skills.png') no-repeat;
+  width: 54px;
+}

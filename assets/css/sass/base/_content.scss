@@ -1,0 +1,125 @@
+// Brain Brian
+// http://www.brainbrian.com
+// Content
+
+.entry-meta {
+  clear: both;
+  display: block;
+}
+
+#main {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 92px;
+  /*accounts for header being positioned absolute*/
+}
+
+#primary {}
+
+#primary.full-width {}
+
+#content nav {
+  display: block;
+  overflow: hidden;
+}
+
+#content nav .nav-previous {
+  float: left;
+  width: 50%;
+}
+
+#content nav .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+#content #nav-above {
+  display: none!important;
+}
+
+.paged #content #nav-above,
+.single #content #nav-above {
+  display: block;
+}
+
+#nav-below {
+  margin: 1em 0 0;
+  display: none!important;
+}
+
+.page-link {
+  margin: 0 0 1em;
+}
+/* 404 page */
+.error404 .widget {
+  float: left;
+  width: 33%;
+}
+
+.error404 .widget .widgettitle,
+.error404 .widget ul {
+  margin-right: 1em;
+}
+
+.error404 .widget_tag_cloud {
+  clear: both;
+  float: none;
+  width: 100%;
+}
+/* Notices */
+.error404 #searchform,
+.post .notice {
+  background: #eee;
+  display: block;
+  padding: 1em;
+}
+/* Image Attachments */
+.image-attachment div.entry-meta {
+  float: left;
+}
+
+.image-attachment nav {
+  float: right;
+  margin: 0 0 1em;
+}
+
+.image-attachment .entry-content {
+  clear: both;
+}
+
+.image-attachment .entry-content .entry-attachment {
+  background: #eee;
+  margin: 0 0 1em;
+  padding: 1em;
+  text-align: center;
+}
+
+.image-attachment .entry-content .attachment {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+/* Aside Posts */
+.format-aside .entry-header {
+  display: none;
+}
+
+.single .format-aside .entry-header {
+  display: block;
+}
+
+.format-aside .entry-content,
+.format-aside .entry-summary {
+  padding-top: 1em;
+}
+
+.single .format-aside .entry-content,
+.single .format-aside .entry-summary {
+  padding-top: 0;
+}
+/* Aside Posts */
+.format-gallery .gallery-thumb {
+  float: left;
+  margin-right: 1em;
+}

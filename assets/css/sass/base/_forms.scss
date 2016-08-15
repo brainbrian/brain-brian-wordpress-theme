@@ -1,0 +1,25 @@
+// Brain Brian
+// http://www.brainbrian.com
+// Forms
+
+#searchform label {
+  display: none;
+}
+
+#searchform input#s {
+  width: 60%;
+}
+
+input#s,
+input[type=text] {
+  margin: 0 1em 0 0;
+  width: 60%;
+}
+
+textarea {
+  width: 80%;
+}
+/* Class for labelling required form items */
+.required {
+  color: #cc0033;
+}

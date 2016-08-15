@@ -1,0 +1,43 @@
+// Brain Brian
+// http://www.brainbrian.com
+// Header
+
+.absolute-positioned-header {
+  background: #262626 url('../images/bg-header.gif') repeat-x;
+  height: 92px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+#branding {
+  background: #262626 url('../images/bg-header.gif') repeat-x;
+  display: block;
+  height: 92px;
+  margin: 0 auto;
+  width: 960px;
+}
+
+#site-title {
+  background: #02A3FF url('../images/brain-brian-logo.gif') repeat-x;
+  float: left;
+  height: 73px;
+  width: 177px;
+}
+
+#site-title span a {
+  display: block;
+  height: 73px;
+  text-indent: -9999px;
+}
+
+#site-description {
+  clear: right;
+  color: #02A3FF;
+  float: left;
+  font-size: 1.4em;
+  font-style: italic;
+  font-weight: 100;
+  margin: 30px 0 23px 30px;
+  width: 480px;
+}
