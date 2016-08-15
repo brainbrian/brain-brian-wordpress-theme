@@ -3,12 +3,12 @@
 // Blog
 
 .entry-title a {
-  color: #02A3FF;
+  color: $color-blue;
   text-decoration: none;
 
   &:hover,
   &:focus {
-    color: #02A3FF;
+    color: $color-blue;
     text-decoration: underline;
   }
 }
@@ -26,7 +26,7 @@
 
     .entry-title {
       font-size: 3.2em;
-      color: #02A3FF;
+      color: $color-blue;
     }
 
     .entry-meta {
@@ -34,7 +34,7 @@
       letter-spacing: 0.1em;
 
       a {
-        color: #02A3FF;
+        color: $color-blue;
         text-decoration: none;
 
         &:hover,
@@ -50,7 +50,7 @@
     letter-spacing: 0.1em;
 
     a {
-      color: #02A3FF;
+      color: $color-blue;
       text-decoration: none;
 
       &:hover,
@@ -65,7 +65,7 @@
   }
 
   footer.entry-meta a {
-    color: #02A3FF;
+    color: $color-blue;
     text-decoration: none;
 
     &:hover,

@@ -5,7 +5,7 @@
 .resume {
   .headline {
     padding:20px;
-    background:#262626;
+    background:$color-dark-grey;
     border-radius:5px;
   }
 
@@ -24,13 +24,13 @@
 
   h4 {
     font-size: 1.8em;
-    color: #02a3ff;
+    color: $color-blue;
     margin-top: 20px;
     padding: 0 20px;
   }
 
   a {
-    color: #02a3ff;
+    color: $color-blue;
     text-decoration: none;
 
     &:focus,
@@ -41,21 +41,21 @@
 }
 
 .resume-experience .headline h3 {
-  background: #262626 url('../images/h3-experience.png') no-repeat;
+  background: $color-dark-grey url('../images/h3-experience.png') no-repeat;
   width: 104px;
 }
 
 .resume-awards .headline h3 {
-  background: #262626 url('../images/h3-awards.png') no-repeat;
+  background: $color-dark-grey url('../images/h3-awards.png') no-repeat;
   width: 104px;
 }
 
 .resume-education .headline h3 {
-  background: #262626 url('../images/h3-education.png') no-repeat;
+  background: $color-dark-grey url('../images/h3-education.png') no-repeat;
   width: 104px;
 }
 
 .resume-skills .headline h3 {
-  background: #262626 url('../images/h3-skills.png') no-repeat;
+  background: $color-dark-grey url('../images/h3-skills.png') no-repeat;
   width: 54px;
 }

@@ -25,6 +25,7 @@
           echo ' | '.sprintf(__('Page %s', 'brainbrian'), max($paged, $page));
       }
     ?></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <meta name="copyright" content="Copyright (c) <?php echo date(Y); ?> Brian Behrens. All Rights Reserved." />
     <meta name="author" content="Brian Behrens, http://www.brainbrian.com" />
     <meta name="description" content="This is the personal portfolio of Brian Behrens. This site serves as a representaton of his professional and personal work since 2002 as an interactive developer." />

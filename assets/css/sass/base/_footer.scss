@@ -2,9 +2,9 @@
 // http://www.brainbrian.com
 // Footer
 
-#colophon {
-  border-top: #23A1FF solid 2px;
-  width: 920px;
-  padding: 20px;
+.site-footer {
+  border-top: $color-blue solid 2px;
   margin: 20px auto 0;
+  max-width: 920px;
+  padding: 20px $gutter-width;
 }

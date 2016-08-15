@@ -8,10 +8,13 @@
 }
 
 #main {
-  width: 960px;
-  margin: 0 auto;
-  padding-top: 92px;
-  /*accounts for header being positioned absolute*/
+  padding: 0 $gutter-width;
+
+  @media (min-width: $screen-md) {
+    margin: 0 auto;
+    max-width: 960px;
+    padding-top: 92px;
+  }
 }
 
 #primary {}

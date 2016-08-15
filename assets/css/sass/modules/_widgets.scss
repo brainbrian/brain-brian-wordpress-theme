@@ -2,8 +2,24 @@
 // http://www.brainbrian.com
 // Widgets
 
+.widget-area {
+  @include clearfix;
+
+  @media (min-width: $screen-md) {
+    margin-left: -15px;
+    width: calc(100% + 30px);
+  }
+}
+
 .widget {
+  @include clearfix;
   display: block;
+
+  @media (min-width: $screen-md) {
+    float: left;
+    padding: 0 ($gutter-width / 2);
+    width: 50%;
+  }
 }
 
 .widget-area {
@@ -17,9 +33,9 @@
 
   .widget-title {
     border-radius: 5px;
-    color: #02A3FF;
+    color: $color-blue;
     height: 15px;
-    padding: 20px;
+    padding: 20px 20px 35px;
     text-indent: -9999px;
   }
 
@@ -34,11 +50,8 @@
   }
 
   .widget_recent_entries {
-    float: left;
-    width: 470px;
-
     .widget-title {
-      background: #262626 url('../images/h3-blog-entries.png') no-repeat;
+      background: $color-dark-grey url('../images/h3-blog-entries.png') no-repeat;
       background-position: 20px 20px;
     }
 
@@ -46,7 +59,7 @@
       background: url('../images/blog-feed-li.png') no-repeat;
 
       a {
-        color: #02A3FF;
+        color: $color-blue;
         text-decoration: none;
 
         &:hover,
@@ -58,12 +71,8 @@
   }
 
   .PI_SimpleTwitterTweets {
-    float: left;
-    margin: 0 0 0 20px;
-    width: 470px;
-
     .widget-title {
-      background: #262626 url('../images/h3-tweets.png') no-repeat;
+      background: $color-dark-grey url('../images/h3-tweets.png') no-repeat;
       background-position: 20px 20px;
     }
 
@@ -71,7 +80,7 @@
       background: url('../images/twitter-feed-li.png') no-repeat;
 
       a {
-        color: #02A3FF;
+        color: $color-blue;
         text-decoration: none;
 
         .timesince {

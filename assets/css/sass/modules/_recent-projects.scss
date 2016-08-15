@@ -3,16 +3,15 @@
 // Recent Projects
 
 .recent-projects {
-  float: left;
   margin: 0 0 20px;
 
   h3 {
-    background: #262626 url('../images/h3-recent-projects.png') no-repeat;
+    background: $color-dark-grey url('../images/h3-recent-projects.png') no-repeat;
     background-position: 20px 20px;
     border-radius: 5px;
-    color: #02A3FF;
+    color: $color-blue;
     height: 15px;
-    padding: 20px;
+    padding: 20px 20px 35px;
     text-indent: -9999px;
   }
 
@@ -21,16 +20,16 @@
     margin: 40px 20px 20px;
 
     a {
-      background: #262626;
+      background: $color-dark-grey;
       border-radius: 5px;
-      color: #fff;
+      color: $color-white;
       display: block;
       overflow: hidden;
       text-decoration: none;
       transition: background 300ms ease-in-out;
 
       h4 {
-        color: #02a3ff;
+        color: $color-blue;
         font-size: 2.8em;
         line-height: 1;
         padding: 5px 20px 0;
@@ -40,38 +39,40 @@
       p {
         font-size: 1.8em;
         padding: 0 20px 10px;
-
-        a {
-          background: none;
-          color: #02A3FF;
-          display: inline;
-
-          &:hover,
-          &:focus {
-            background: none;
-            text-decoration: underline;
-          }
-        }
       }
 
       &:hover,
       &:focus {
-        background: #02a3ff;
+        background: $color-blue;
 
         h4 {
-          color: #fff;
+          color: $color-white;
         }
       }
     }
 
     img {
-      background: #fff;
+      background: $color-white;
+      height: auto;
       padding: 0;
+      width: 100%;
     }
 
     .project-details p {
       font-size: 1.8em;
       padding: 20px 20px 0;
+
+      a {
+        background: none;
+        color: $color-blue;
+        display: inline;
+
+        &:hover,
+        &:focus {
+          background: none;
+          text-decoration: underline;
+        }
+      }
     }
   }
 }

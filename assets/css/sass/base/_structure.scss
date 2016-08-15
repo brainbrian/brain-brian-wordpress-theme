@@ -3,12 +3,16 @@
 // Structure
 
 body {
-  background: #484848 url('../images/bg-header.gif') repeat-x;
-  font-size: 62.5%;
-  /* Base font size: 10px */
+  background: $color-grey url('../images/bg-header.gif') repeat-x;
+  color: $color-white;
+  font-family: $font-family-normal;
+  font-size: 62.5%; // Base font size: 10px
   line-height: 1.429;
-  color: #FFF;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  min-width: 432px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 #page {
@@ -17,7 +21,6 @@ body {
 }
 
 #primary {
-  float: left;
   margin: 0 -240px 0 0;
   width: 100%;
 }
@@ -69,10 +72,10 @@ body {
 }
 
 .post-edit-link {
-  background: #02A3FF;
+  background: $color-blue;
   border-radius: 5px;
   clear: both;
-  color: #fff;
+  color: $color-white;
   display: block;
   font-size: 2.4em;
   margin: 20px;

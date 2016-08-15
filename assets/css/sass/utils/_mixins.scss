@@ -1,0 +1,15 @@
+// Brain Brian
+// http://www.brainbrian.com
+// Mixins
+
+@mixin clearfix {
+  &::before,
+  &::after {
+    content: '';
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
