@@ -6,5 +6,9 @@
   border-top: $color-blue solid 2px;
   margin: 20px auto 0;
   max-width: 920px;
-  padding: 20px $gutter-width;
+  padding: 20px $gutter-sm;
+
+  @media (min-width: $screen-md) {
+    padding: 20px $gutter-md;
+  }
 }

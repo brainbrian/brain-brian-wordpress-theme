@@ -8,18 +8,14 @@
 }
 
 #main {
-  padding: 0 $gutter-width;
+  padding: 0 $gutter-sm;
 
   @media (min-width: $screen-md) {
     margin: 0 auto;
     max-width: 960px;
-    padding-top: 92px;
+    padding: 92px $gutter-md 0;
   }
 }
-
-#primary {}
-
-#primary.full-width {}
 
 #content nav {
   display: block;
