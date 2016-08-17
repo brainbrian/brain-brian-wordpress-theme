@@ -27,7 +27,7 @@
   }
 
   a {
-    color: $color-grey;
+    color: $color-white;
     background: $color-blue;
     text-decoration: none;
     border-radius: 5px;
@@ -37,8 +37,7 @@
     &:hover,
     &:focus {
       color: $color-blue;
-      background: $color-grey;
-      text-decoration: underline;
+      background: $color-white;
     }
   }
 }

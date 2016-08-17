@@ -871,7 +871,7 @@ textarea {
     font-size: 2.3em;
     line-height: 1.8; }
   .short-biography a {
-    color: #484848;
+    color: #fff;
     background: #23a1ff;
     text-decoration: none;
     border-radius: 5px;
@@ -879,8 +879,7 @@ textarea {
     margin: 3px 1px; }
     .short-biography a:hover, .short-biography a:focus {
       color: #23a1ff;
-      background: #484848;
-      text-decoration: underline; }
+      background: #fff; }
 
 .recent-projects {
   margin: 0 0 20px; }
@@ -891,7 +890,9 @@ textarea {
     color: #23a1ff;
     height: 15px;
     padding: 20px 20px 35px;
-    text-indent: -9999px; }
+    position: relative;
+    text-indent: -9999px;
+    z-index: 3; }
   .recent-projects .project-list li {
     float: left;
     margin: 40px 20px 20px; }
@@ -1028,3 +1029,36 @@ textarea {
     text-decoration: none; }
     #tweet a:hover, #tweet a:focus {
       text-decoration: underline; }
+
+.video-blade {
+  background-image: url("../images/bg-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: -5px;
+  overflow: hidden;
+  position: relative; }
+  .video-blade .page {
+    position: relative;
+    z-index: 2; }
+  .video-blade--video {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1; }
+    .video-blade--video video {
+      display: none; }
+    @media (min-width: 768px) {
+      .no-touchevents .video-blade--video {
+        background-color: #262626;
+        background-image: none; }
+        .no-touchevents .video-blade--video video {
+          display: block;
+          height: auto;
+          left: 0;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 100%; }
+        .no-touchevents .video-blade--video img {
+          display: none; } }

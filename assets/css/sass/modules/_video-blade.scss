@@ -1,0 +1,56 @@
+// Brain Brian
+// http://www.brainbrian.com
+// Video Player
+
+$module: 'video-blade';
+
+.#{$module} {
+  background-image: url('../images/bg-hero.jpg');
+  background-position: center;
+  background-size: cover;
+  margin-bottom: -5px;
+  overflow: hidden;
+  position: relative;
+
+  .page {
+    position: relative;
+    z-index: 2;
+  }
+
+  &--video {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    video {
+      display: none;
+    }
+
+    @at-root {
+      .no-touchevents {
+        @media (min-width: $screen-md) {
+          .#{$module}--video {
+            background-color: $color-dark-grey;
+            background-image: none;
+
+            video {
+              display: block;
+              height: auto;
+              left: 0;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 100%;
+            }
+
+            img {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

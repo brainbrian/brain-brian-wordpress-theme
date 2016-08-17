@@ -12,7 +12,14 @@ get_header(); ?>
         <div id="primary" class="full-width">
           <div id="content" role="main">
             <?php the_post(); ?>
-            <?php get_template_part('partials/content', 'page'); ?>
+            <div class="video-blade">
+              <?php get_template_part('partials/content', 'page'); ?>
+              <div class="video-blade--video">
+                <video loop autoplay>
+                  <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/bg-hero.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
             <div class="recent-projects">
               <h3>Recent Projects</h3>
               <ul class="project-list">
