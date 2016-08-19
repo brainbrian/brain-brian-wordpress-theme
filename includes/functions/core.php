@@ -23,6 +23,7 @@ function setup() {
   add_action('wp_head', $n('header_meta'));
   add_action('init', $n('register_custom_post_types'));
   add_action('init', $n('toolbox_widgets_init'));
+  add_filter('embed_defaults',$n('theme_embed_defaults'));
 }
 
 /**
@@ -122,8 +123,8 @@ function initTheme() {
   /**
    * Set the content width based on the theme's design and stylesheet.
    */
-  if (! isset( $content_width))
-    $content_width = 640; /* pixels */
+  // if (! isset( $content_width))
+  //   $content_width = 640; /* pixels */
 
   /**
    * This theme uses wp_nav_menu() in one location.
@@ -238,4 +239,15 @@ function toolbox_widgets_init() {
     'before_title' => '<h1 class="widget-title">',
     'after_title' => '</h1>',
   ));
+}
+
+/**
+ * Update oEmbed default sizing
+ * @param  Array $defaults array of embed defaults
+ * @return Array           array of embed defaults
+ */
+function theme_embed_defaults($defaults) {
+  $defaults['width'] = 1024;
+  $defaults['height'] = 1024;
+  return $defaults;
 }
