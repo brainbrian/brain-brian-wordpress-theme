@@ -902,7 +902,7 @@ textarea {
     z-index: 3; }
   .recent-projects .project-list li {
     float: left;
-    margin: 40px 20px 20px; }
+    margin: 40px 0 20px; }
     .recent-projects .project-list li a {
       background: #262626;
       border-radius: 5px;
